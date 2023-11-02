@@ -43,6 +43,19 @@ export default defineConfig([
         format: 'esm',
         file: `dist/bulma-vue.esm.js`,
       }
+    }),
+
+    // Configuration for src/components/index.ts
+    defineConfig({
+      plugins: [
+        esbuild(esbuildOptions)
+      ],
+      external,
+      input: `src/components/index.ts`,
+      output: {
+        format: 'esm',
+        file: `dist/components/index.js`,
+      }
     })
   ]
 ])
