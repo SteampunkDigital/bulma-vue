@@ -4,7 +4,7 @@
   "main": "dist/bulma-vue.esm.js",
   "exports": {
     ".": "./dist/bulma-vue.esm.js",
-    "./components/index": "./dist/components/index.js",
+    "./components": "./dist/components/index.js",
     "./components/*": "./dist/components/*/index.js",
     "./css/bulma-vue.css": "./dist/bulma-vue.css",
     "./package.json": "./package.json"
